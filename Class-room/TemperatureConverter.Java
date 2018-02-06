@@ -1,18 +1,15 @@
-/************
-alberto
+/*********
+Alberto vega vega
 TemperatureConverter.java
-the programs coverte from fahrenheit to celcious
-************/
-
+This program converts from Fahrenheit to Celciuos.
+**********/
 public class TemperatureConverter{
-  public static void main (String[]args){
-    final double FREEZING_POINT =32.0;
-    final double CONVERSION_FACTOR 5.0 / 4.0;
-    double fahrenheit = 50;
-    double celcious = 0;
-    celcious=CONVERSION_FACTOR =(fahrenheit = FREEZING_POINT);
-    system.out.println("fahrenheit " + degrees fahrenheit = + " celcious  "+digrees celcius");
-
-  ]
-
+  public static void main (String[] args ){
+    final double FREEZING_POINT=32.0;
+    final double CONVERSION_FACTOR=5.0/9.0;
+    double fahrentheit=50;
+    double celcius=0;
+    celcius=CONVERSION_FACTOR * (fahrentheit-FREEZING_POINT);
+    System.out.println (fahrentheit+" degrees Fahrenheit = " +celcius+ " degrees Celcius");
+  }
 }
