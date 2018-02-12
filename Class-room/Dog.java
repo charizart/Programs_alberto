@@ -4,7 +4,7 @@ alberto veg vega
 this class stas the dog´s propertier and methods
 
 */
-
+import  javax.swing.JOptionPane;
 public class Dog{
 
   //Dog´s properties - Variabless
@@ -29,17 +29,20 @@ public class Dog{
     public void setHeight(String height){
       height=height;
     }
-    public String getHeight(){
+    public double getHeight(){
       return height;
     }
     public void setLenght(String length){
       length=length;
     }
-    public String getWeight(String weight){
+    public double getLength(){
+      return length;
+    }
+    public void getWeight(String weight){
       weight=weight;
     }
-    public void setWeight(){
-      return weight;
+    public double setWeight(){
+       return weight;
     }
 
     public void sit(){
@@ -49,13 +52,13 @@ public class Dog{
       JOptionPane.showMessageDialog(null, "the dog is barking");
     }
     public void layDown(){
-      JOptionPane.showMessageDialog(null,"the dog is laid down");
+      JOptionPane.showMessageDialog(null, "the dog is laid down");
     }
     public void sleep(){
-      JOptionPane.showMessageDialog(null, "the dog is sleepeing")
+      JOptionPane.showMessageDialog(null, "the dog is sleepeing");
     }
     public void eat(){
-      JOptionPane.showMessageDialog(null;"the dog is eating")
+      JOptionPane.showMessageDialog(null, "the dog is eating ");
 
     }
 }
