@@ -13,13 +13,11 @@ public class WhileLoop{
 
       more = JOptionPane.showInputDialog("do you want to create a bridal registry (y/n)").charAt(0);
 
-      while(more ==´y´){
-        registry +=
-        JOptionPane.showInputDialog("enter item: ");
-        registry +=
+      while(more ==´y´ || more == ´Y´ ){ registry += JOptionPane.showInputDialog("enter item: ");
+        registry += "\n";
         JOptionPane.showInputDialog("enter store \n");
-        more =
-        JOptionPane.showInputDialog("any more items? (y/n)".charAt(0));
+        registry += "\n";
+        more = JOptionPane.showInputDialog("any more items? (y/n)".charAt(0));
       }//end while
       if (!registry.equals("")) {
         JOptionPane.showInputDialog(null, "\nBridal registry\n" + registry);

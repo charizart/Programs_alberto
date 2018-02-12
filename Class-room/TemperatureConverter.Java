@@ -1,5 +1,6 @@
 /*********
 Alberto vega vega
+
 TemperatureConverter.java
 This program converts from Fahrenheit to Celciuos.
 **********/
@@ -10,6 +11,6 @@ public class TemperatureConverter{
     double fahrentheit=50;
     double celcius=0;
     celcius=CONVERSION_FACTOR * (fahrentheit-FREEZING_POINT);
-    System.out.println (fahrentheit+" degrees Fahrenheit = " +celcius+ " degrees Celcius");
+    System.out.println (fahrentheit+" degrees Fahrenheit = " + "=" + celcius + " degrees Celcius");
   }
 }
