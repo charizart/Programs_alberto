@@ -11,7 +11,7 @@ public class sueldo{
     public static void main(String[] args){
         JOptionPane.showMessageDialog(null,"Programa que calcula el sueldo de un empleado");
         String empleado;
-        int matricula,tipoe,diast,retardos,horasextra,importe=0,bono=0,descuento=0,sueldo=0;
+        int diast,horasextra,importe=0,bono=0,descuento=0,sueldo=0;
         double sueldoiva=0,iva=1.11;
         empleado = JOptionPane.showInputDialog("Empleado:");
         diast = Integer.parseInt(JOptionPane.showInputDialog("Dias Trabajados:"));
