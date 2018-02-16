@@ -52,7 +52,7 @@ public class Dog{
       JOptionPane.showMessageDialog(null, "the dog is barking");
     }
     public void layDown(){
-      JOptionPane.showMessageDialog(null, "the dog is laid down");
+      JOptionPane.showMessageDialog(null, "the dog is layd down");
     }
     public void sleep(){
       JOptionPane.showMessageDialog(null, "the dog is sleepeing");
