@@ -8,24 +8,29 @@ public class Circle{
 
   private double radius;
 
+  public Circle(){
 
-  public void setRadius(double radius)
-  {
+  }
+  //construtor circle overload
+  public Circle(double radius){
     this.radius = radius;
   }
-  public double getRadius()
-  {
+
+  public void setRadius(double radius){
+    this.radius = radius;
+  }
+  public double getRadius(){
     return this.radius;
   }
 
-  public double getArea()
-  {
+  public double getArea(){
     return Math.pow(this.radius,2)*Math.PI;
   }
-  public static void main(String[] args)
-  {
-    Circle circle = new Circle();
-    circle.setRadius(3.14);
-    JOptionPane.showMessageDialog(null, circle.getArea());
+  public static void main(String[] args){
+    double radius = Double.parseDouble(JOptionPane.showInputDialog("enter the radius"));
+    Circle circle = new Circle(radius);
+    JOptionPane.showMessageDialog(null, "the circle´s area with a radius of" + circle.getRadius() + "is" + circle.getAre());
+    //circle.setRadius(3.14);
+    //JOptionPane.showMessageDialog(null, circle.getArea());
   }
 }

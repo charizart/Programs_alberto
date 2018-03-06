@@ -1,5 +1,5 @@
 /*
-Alberto
+Alberto vega vega
 programs BMI.Java
 this programs calculates the body mass index
 */

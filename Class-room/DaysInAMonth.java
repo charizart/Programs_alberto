@@ -4,10 +4,8 @@ Alberto vega vega
 This program finds the number of days in a month
 ************/
 import javax.swing.JOptionPane;
-public class DaysInAMonth
-{
-  public static void main (String[]args)
-  {
+public class DaysInAMonth{
+  public static void main (String[]args){
     int numberOfDaysInAMonth=0, year, modulo;
     String monthOfYear;
     year=Integer.parseInt(JOptionPane.showInputDialog("Enter your year"));
