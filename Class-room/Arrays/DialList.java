@@ -1,5 +1,5 @@
 /*********************
-albertto vega vega
+alberto vega vega
 DialList.java
 This a program creates a cell phone dial phone number list and print the created List
 *********************/

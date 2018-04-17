@@ -1,6 +1,6 @@
 /*************************************************************************
+alberto vega vega
 BMIOOP.java
-pedro uriel de jesus cortez
 this class calculates the body mass index
 
 ****************************************************************************/
