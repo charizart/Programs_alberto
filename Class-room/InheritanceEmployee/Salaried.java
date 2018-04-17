@@ -1,3 +1,7 @@
+/*
+alberto vega vega
+*/
+
 public class Salaried extends Employee{
   private double salary;
 
