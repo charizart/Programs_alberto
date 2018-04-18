@@ -1,40 +1,40 @@
 /*
-Alberto vega vega
-Television.java
+
+EXAM
+DIEGO PEREZ CARRILLO
+LUIS URIEL VICTORIANO JUAREZ
+THIS IS THE CLASS WILL BE THE TEMPLATE OF THE TELEVISION (MY SMARTTV)
 */
-import javax.swing.*;
 public class Television extends Electrodomestico{
-  private int resolucion=20;
-  private Boolean sintonizadorTDT=false;
 
-  public Television(){
-  }
+    private final static int RESOLUTION_FOR_DFCT=20;
+    private int resolution;
+    private boolean sintonizadorTDT;
+    public double precioFinal(){
 
-  public Television(int precioBase, int peso){
-    super(precioBase, peso);
-  }
+        double plus=super.precioFinal();
 
-  public Television(int resolucion, Boolean sintonizadorTDT, int precioBase, int peso, String color, char consumoEnergetico){
-    super(precioBase, peso, color, consumoEnergetico);
-    this.resolucion=resolucion;
-    this.sintonizadorTDT=sintonizadorTDT;
-  }
 
-  public int getResolucion(){
-    return this.resolucion;
-  }
-  public Boolean sintonizadorTDT(){
-    return this.sintonizadorTDT;
-  }
-  public double precioFinal(){
-    double precioTele=super.precioFinal();
-    if (resolucion>=40 ){
-    precioTele=precioTele*1.30;
+        if (resolution>40){
+            plus+=baseprice*0.3;
+        }
+        if (sintonizadorTDT){
+            plus+=50;
+        }
+
+        return plus;
     }
-    if (sintonizadorTDT==true){
-      precioTele=precioTele+50;
+    public Television(){
+        this(BASE_PRICE_FOR_DFCT, WEIGHT_FOR_DFCT, ENERGY_CONSUMPTION_FOR_DFCT, COLOR_FOR_DFCT, RESOLUTION_FOR_DFCT, false);
     }
-    return precioTele;
-  }
 
-}
+    public Television(double baseprice, double weight){
+        this(baseprice, weight, ENERGY_CONSUMPTION_FOR_DFCT, COLOR_FOR_DFCT, RESOLUTION_FOR_DFCT, false);
+    }
+
+    public Television(double baseprice, double weight, char energyconsumption, String color, int resolution, boolean sintonizadorTDT){
+        super(baseprice, weight, energyconsumption, color);
+        this.resolution=resolution;
+        this.sintonizadorTDT=sintonizadorTDT;
+    }
+}//end class Television

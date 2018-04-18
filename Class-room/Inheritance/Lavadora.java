@@ -1,32 +1,36 @@
 /*
-Alberto vega vega
-Lavadora.java
+EXAM
+DIEGO PEREZ CARRILLO
+LUIS URIEL VICTORIANO JUAREZ
+THIS IS THE CLASS WILL BE THE TEMPLATE OF THE WASHING MACHINES
 */
-import javax.swing.*;
 public class Lavadora extends Electrodomestico{
-  private int carga=5;
+    private final static int LOAD_FOR_DFCT=5;
+    private int load;
 
-  public Lavadora(){
-  }
-
-  public Lavadora(int precioBase, int peso){
-    super (precioBase, peso);
-  }
-
-  public Lavadora(int carga, int precioBase, int peso, String color, char consumoEnergetico){
-    super(precioBase,peso,color,consumoEnergetico);
-    this.carga=carga;
-  }
-
-  public int getCarga(){
-    return this.carga;
-  }
-
-  public double precioFinal(){
-    double precioLava=super.precioFinal();
-    if (carga>30){
-      precioLava=precioLava+50;
+    public int getLoad() {
+        return load;
     }
-    return precioLava;
-  }
-}
+
+    public double precioFinal(){
+        double plus=super.precioFinal();
+        if (load>30){
+            plus+=50;
+        }
+
+        return plus;
+    }
+
+    public Lavadora(){
+        this(BASE_PRICE_FOR_DFCT, WEIGHT_FOR_DFCT, ENERGY_CONSUMPTION_FOR_DFCT, COLOR_FOR_DFCT, LOAD_FOR_DFCT);
+    }
+
+    public Lavadora(double baseprice, double weight){
+        this(baseprice, weight, ENERGY_CONSUMPTION_FOR_DFCT, COLOR_FOR_DFCT, LOAD_FOR_DFCT);
+    }
+
+    public Lavadora(double baseprice, double weight, char energyconsumption, String color, int load){
+        super(baseprice,weight, energyconsumption, color);
+        this.load=load;
+    }
+}//end class Lavadora
